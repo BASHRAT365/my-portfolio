@@ -1,0 +1,52 @@
+body
+{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#EAF4FC;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+.card
+{
+    width:450px;
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+h1
+{
+    color:darkblue;
+}
+input
+{
+    width:80%;
+    padding:15px;
+    font-size:18px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+button
+{
+    background:darkblue;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+button:hover
+{
+    background:red;
+}
+h2
+{
+    color:green;
+    margin-top:30px;
+    line-height:35px;
+}

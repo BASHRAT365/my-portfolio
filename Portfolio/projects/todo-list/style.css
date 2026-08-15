@@ -1,0 +1,70 @@
+body
+{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#EAF4FC;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+.card
+{
+    width:450px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+h1
+{
+    color:darkblue;
+}
+input 
+{
+    width:70%;
+    padding:12px;
+    font-size:18px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+button 
+{
+    padding:12px 20px;
+    background:darkblue;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:8px;
+}
+button:hover
+{
+    background:red;
+}
+ul
+{
+    list-style:none;
+    padding:0;
+    margin-top:25px;
+}
+li
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f4f4f4;
+    padding:12px;
+    margin-top:10px;
+    border-radius:8px;
+}
+.delete
+{
+    background:red;
+    padding:8px 12px;
+    border:none;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
