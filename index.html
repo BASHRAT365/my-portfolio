@@ -9,14 +9,27 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Bashrat Ahmad - AI Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
     <!-- =========================
-         CSS
+         SEO
+    ========================== -->
+
+    <title>Bashrat Ahmad | AI Web Developer</title>
+
+    <meta name="description"
+          content="Bashrat Ahmad is an AI Web Developer building modern websites and web applications using HTML, CSS, JavaScript and Artificial Intelligence.">
+
+    <meta name="keywords"
+          content="Bashrat Ahmad, AI Web Developer, Web Developer, HTML, CSS, JavaScript, Artificial Intelligence, Portfolio">
+
+    <meta name="author"
+          content="Bashrat Ahmad">
+
+
+    <!-- =========================
+         WEBSITE STYLESHEET
     ========================== -->
 
     <link rel="stylesheet" href="style.css">
@@ -34,226 +47,231 @@
 <body>
 
 
-    <!-- =========================
-         HEADER
-    ========================== -->
+  <!-- =========================
+     HEADER & NAVIGATION
+========================= -->
 
-    <header>
+<header class="site-header">
 
-        <h1>Bashrat Ahmad</h1>
+    <div class="logo-area">
 
-        <p>AI Web Developer</p>
+        <img src="images/logo.png" alt="Bashrat365 Logo">
 
-    </header>
+        <div>
+            <h1>Bashrat365</h1>
+            <p>AI Web Developer</p>
+        </div>
 
+    </div>
 
-
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
-    <nav>
-
-        <a href="#home">Home</a>
-
-        <a href="#about">About</a>
-
-        <a href="#projects">Projects</a>
-
-        <a href="#contact">Contact</a>
-
-        <button onclick="toggleDarkMode()" id="darkModeBtn">
-            🌙 Dark Mode
-        </button>
-
-    </nav>
+</header>
 
 
+<nav class="main-nav">
 
-    <!-- =========================
-         HERO SECTION
-    ========================== -->
+    <a href="#home">Home</a>
 
-    <section class="hero" id="home">
+    <a href="#about">About</a>
 
-        <img src="images/my-photo.jpg"
-             alt="Bashrat Ahmad">
+    <a href="#projects">Projects</a>
 
-        <h2>Bashrat Ahmad</h2>
+    <a href="#contact">Contact</a>
 
-        <p>
-            AI Web Developer
-        </p>
+    <button onclick="toggleDarkMode()" id="darkModeBtn">
+        🌙 Dark Mode
+    </button>
 
+</nav>
 
-        <!-- CV BUTTON -->
+ <!-- =========================
+     HERO SECTION
+========================= -->
 
-        <a href="documents/Bashrat-Ahmad-CV.pdf"
-           download>
+<section class="hero" id="home">
+
+    <!-- Profile Photo -->
+    <img src="images/my-photo.jpg" alt="Bashrat Ahmad">
+
+    <!-- Name -->
+    <h2>Bashrat Ahmad</h2>
+
+    <!-- Professional Title -->
+    <h3>AI Web Developer</h3>
+
+    <!-- Introduction -->
+    <p>
+        I build modern, responsive and user-friendly websites
+        using HTML, CSS, JavaScript and AI technologies.
+    </p>
+
+    <!-- Hero Buttons -->
+    <div class="hero-buttons">
+
+        <a href="documents/Bashrat-Ahmad-CV.pdf" download>
             Download CV
         </a>
-
-
-        <!-- CONTACT BUTTON -->
 
         <a href="#contact">
             Contact Me
         </a>
 
-    </section>
+    </div>
 
+</section>
 
+   <!-- =========================
+     ABOUT ME SECTION
+========================= -->
 
+<section class="about" id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        Hello! I’m Bashrat Ahmad, an aspiring AI Web Developer
+        passionate about creating modern, responsive and
+        user-friendly websites.
+    </p>
+
+    <p>
+        I am building my skills in HTML, CSS, JavaScript,
+        WordPress and Artificial Intelligence. I enjoy learning
+        new technologies and turning ideas into practical
+        web projects.
+    </p>
+
+    <p>
+        My goal is to become a professional AI Web Developer
+        and help individuals and businesses build effective
+        digital experiences.
+    </p>
+
+</section>
     <!-- =========================
-         ABOUT SECTION
-    ========================== -->
+     SKILLS SECTION
+========================= -->
 
-    <section class="about" id="about">
+<section class="skills" id="skills">
 
-        <h2>About Me</h2>
+    <h2>My Skills</h2>
 
-        <p>
-            My name is Bashrat Ahmad.
-            I am learning Web Development and Artificial Intelligence.
-            I enjoy building websites using HTML, CSS and JavaScript.
-            My goal is to become a Professional AI Web Developer.
-        </p>
+    <p>HTML</p>
 
-    </section>
+    <div class="bar">
+        <div class="html"></div>
+    </div>
 
+    <p>CSS</p>
 
+    <div class="bar">
+        <div class="css"></div>
+    </div>
 
+    <p>JavaScript</p>
+
+    <div class="bar">
+        <div class="js"></div>
+    </div>
+
+    <p>WordPress</p>
+
+    <div class="bar">
+        <div class="wordpress"></div>
+    </div>
+
+    <p>AI Web Development</p>
+
+    <div class="bar">
+        <div class="ai"></div>
+    </div>
+
+</section>
     <!-- =========================
-         SKILLS SECTION
-    ========================== -->
+     PROJECTS SECTION
+========================= -->
 
-    <section class="skills" id="skills">
+<section class="projects" id="projects">
 
-        <h2>My Skills</h2>
+    <h2>My Projects</h2>
+
+    <p class="projects-intro">
+        Here are some of the web projects I have built while learning
+        HTML, CSS and JavaScript.
+    </p>
 
 
-        <!-- HTML -->
+    <div class="project-container">
 
-        <p>HTML</p>
 
-        <div class="bar">
+        <!-- =========================
+             WEATHER APP
+        ========================== -->
 
-            <div class="html"></div>
+        <div class="project-card">
+
+            <img src="images/weather.png" alt="Weather App">
+
+            <h3>Weather App</h3>
+
+            <p>
+                A weather application built using HTML, CSS and
+                JavaScript to display weather information.
+            </p>
+
+            <a href="projects/weather-app/index.html">
+                View Project
+            </a>
+
+        </div>
+
+
+        <!-- =========================
+             TO DO LIST
+        ========================== -->
+
+        <div class="project-card">
+
+            <img src="images/todo.png" alt="To Do List">
+
+            <h3>To Do List</h3>
+
+            <p>
+                A task management application built with JavaScript
+                to help users organize their daily tasks.
+            </p>
+
+            <a href="projects/todo-list/index.html">
+                View Project
+            </a>
 
         </div>
 
 
-        <!-- CSS -->
+        <!-- =========================
+             DIGITAL CLOCK
+        ========================== -->
 
-        <p>CSS</p>
+        <div class="project-card">
 
-        <div class="bar">
+            <img src="images/clock.png" alt="Digital Clock">
 
-            <div class="css"></div>
+            <h3>Digital Clock</h3>
 
-        </div>
+            <p>
+                A real-time digital clock created using HTML, CSS
+                and JavaScript.
+            </p>
 
-
-        <!-- JAVASCRIPT -->
-
-        <p>JavaScript</p>
-
-        <div class="bar">
-
-            <div class="js"></div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         PROJECTS SECTION
-    ========================== -->
-
-    <section class="projects" id="projects">
-
-        <h2>My Projects</h2>
-
-
-        <div class="project-container">
-
-
-            <!-- WEATHER APP -->
-
-            <div class="project-card">
-
-                <img src="images/weather.png"
-                     alt="Weather App">
-
-                <h3>Weather App</h3>
-
-                <p>
-                    Weather App using HTML, CSS and JavaScript.
-                </p>
-
-                <a href="projects/weather-app/index.html">
-                    <button type="button">
-                        View Project
-                    </button>
-                </a>
-
-            </div>
-
-
-
-            <!-- TO DO LIST -->
-
-            <div class="project-card">
-
-                <img src="images/todo.png"
-                     alt="To Do List">
-
-                <h3>To Do List</h3>
-
-                <p>
-                    Task Management App using JavaScript.
-                </p>
-
-                <a href="projects/todo-list/index.html">
-                    <button type="button">
-                        View Project
-                    </button>
-                </a>
-
-            </div>
-
-
-
-            <!-- DIGITAL CLOCK -->
-
-            <div class="project-card">
-
-                <img src="images/clock.png"
-                     alt="Digital Clock">
-
-                <h3>Digital Clock</h3>
-
-                <p>
-                    Real Time Digital Clock using JavaScript.
-                </p>
-
-                <a href="projects/digital-clock/index.html">
-                    <button type="button">
-                        View Project
-                    </button>
-                </a>
-
-            </div>
-
+            <a href="projects/digital-clock/index.html">
+                View Project
+            </a>
 
         </div>
 
-    </section>
 
+    </div>
 
-
+</section>
     <!-- =========================
          CONTACT SECTION
     ========================== -->
@@ -316,22 +334,31 @@
 
     </section>
 
-
+    <!-- =========================
+     END CONTACT SECTION
+    ========================= -->
 
     <!-- =========================
-         FOOTER
-    ========================== -->
+     FOOTER SECTION
+========================= -->
 
-    <footer>
+<footer>
+
+    <div class="footer-content">
 
         <h3>Bashrat Ahmad</h3>
 
+        <p>AI Web Developer</p>
+
         <p>
-            AI Web Developer
+            Building modern websites with HTML, CSS,
+            JavaScript and Artificial Intelligence.
         </p>
 
 
-        <!-- SOCIAL LINKS -->
+        <!-- =========================
+             SOCIAL LINKS
+        ========================== -->
 
         <div class="social-links">
 
@@ -346,17 +373,21 @@
         </div>
 
 
-        <!-- COPYRIGHT -->
+        <!-- =========================
+             COPYRIGHT
+        ========================== -->
 
         <p class="copyright">
-
-            © 2026 Bashrat Ahmad.
-            All Rights Reserved.
-
+            © 2026 Bashrat Ahmad. All Rights Reserved.
         </p>
 
-    </footer>
+    </div>
 
+</footer>
+
+<!-- =========================
+     END FOOTER SECTION
+========================= -->
 
 
     <!-- =========================
