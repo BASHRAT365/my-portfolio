@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================
+         BASIC HTML SETTINGS
+    ========================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bashrat Ahmad - AI Web Developer</title>
+
+
+    <!-- =========================
+         CSS
+    ========================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- =========================
+         EMAILJS
+    ========================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <h1>Bashrat Ahmad</h1>
+
+        <p>AI Web Developer</p>
+
+    </header>
+
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#projects">Projects</a>
+
+        <a href="#contact">Contact</a>
+
+        <button onclick="toggleDarkMode()" id="darkModeBtn">
+            🌙 Dark Mode
+        </button>
+
+    </nav>
+
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero" id="home">
+
+        <img src="images/my-photo.jpg"
+             alt="Bashrat Ahmad">
+
+        <h2>Bashrat Ahmad</h2>
+
+        <p>
+            AI Web Developer
+        </p>
+
+
+        <!-- CV BUTTON -->
+
+        <a href="documents/Bashrat-Ahmad-CV.pdf"
+           download>
+            Download CV
+        </a>
+
+
+        <!-- CONTACT BUTTON -->
+
+        <a href="#contact">
+            Contact Me
+        </a>
+
+    </section>
+
+
+
+    <!-- =========================
+         ABOUT SECTION
+    ========================== -->
+
+    <section class="about" id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            My name is Bashrat Ahmad.
+            I am learning Web Development and Artificial Intelligence.
+            I enjoy building websites using HTML, CSS and JavaScript.
+            My goal is to become a Professional AI Web Developer.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         SKILLS SECTION
+    ========================== -->
+
+    <section class="skills" id="skills">
+
+        <h2>My Skills</h2>
+
+
+        <!-- HTML -->
+
+        <p>HTML</p>
+
+        <div class="bar">
+
+            <div class="html"></div>
+
+        </div>
+
+
+        <!-- CSS -->
+
+        <p>CSS</p>
+
+        <div class="bar">
+
+            <div class="css"></div>
+
+        </div>
+
+
+        <!-- JAVASCRIPT -->
+
+        <p>JavaScript</p>
+
+        <div class="bar">
+
+            <div class="js"></div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PROJECTS SECTION
+    ========================== -->
+
+    <section class="projects" id="projects">
+
+        <h2>My Projects</h2>
+
+
+        <div class="project-container">
+
+
+            <!-- WEATHER APP -->
+
+            <div class="project-card">
+
+                <img src="images/weather.png"
+                     alt="Weather App">
+
+                <h3>Weather App</h3>
+
+                <p>
+                    Weather App using HTML, CSS and JavaScript.
+                </p>
+
+                <a href="projects/weather-app/index.html">
+                    <button type="button">
+                        View Project
+                    </button>
+                </a>
+
+            </div>
+
+
+
+            <!-- TO DO LIST -->
+
+            <div class="project-card">
+
+                <img src="images/todo.png"
+                     alt="To Do List">
+
+                <h3>To Do List</h3>
+
+                <p>
+                    Task Management App using JavaScript.
+                </p>
+
+                <a href="projects/todo-list/index.html">
+                    <button type="button">
+                        View Project
+                    </button>
+                </a>
+
+            </div>
+
+
+
+            <!-- DIGITAL CLOCK -->
+
+            <div class="project-card">
+
+                <img src="images/clock.png"
+                     alt="Digital Clock">
+
+                <h3>Digital Clock</h3>
+
+                <p>
+                    Real Time Digital Clock using JavaScript.
+                </p>
+
+                <a href="projects/digital-clock/index.html">
+                    <button type="button">
+                        View Project
+                    </button>
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            If you would like to work with me,
+            feel free to contact me.
+        </p>
+
+
+        <!-- CONTACT FORM -->
+
+        <form id="contact-form">
+
+
+            <!-- NAME -->
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required>
+
+
+
+            <!-- EMAIL -->
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+
+
+
+            <!-- MESSAGE -->
+
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required></textarea>
+
+
+
+            <!-- SEND BUTTON -->
+
+            <button type="submit">
+                Send Message
+            </button>
+
+
+        </form>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <h3>Bashrat Ahmad</h3>
+
+        <p>
+            AI Web Developer
+        </p>
+
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="social-links">
+
+            <a href="#" target="_blank">
+                GitHub
+            </a>
+
+            <a href="#" target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <p class="copyright">
+
+            © 2026 Bashrat Ahmad.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
