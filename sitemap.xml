@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+>
+
+    <url>
+        <loc>https://bashrat365.github.io/my-portfolio/</loc>
+    </url>
+
+    <url>
+        <loc>https://bashrat365.github.io/my-portfolio/projects/blog-website/</loc>
+    </url>
+
+    <url>
+        <loc>https://bashrat365.github.io/my-portfolio/projects/blog-website/article-1.html</loc>
+    </url>
+
+    <url>
+        <loc>https://bashrat365.github.io/my-portfolio/projects/blog-website/article-2.html</loc>
+    </url>
+
+    <url>
+        <loc>https://bashrat365.github.io/my-portfolio/projects/blog-website/article-3.html</loc>
+    </url>
+
+    <url>
+        <loc>https://bashrat365.github.io/my-portfolio/projects/blog-website/article-4.html</loc>
+    </url>
+
+</urlset>

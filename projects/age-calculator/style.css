@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #eef4ff;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin: 0 0 15px;
+
+    color: darkblue;
+
+    font-size: 32px;
+}
+
+.container p {
+    margin-bottom: 30px;
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.calculator label {
+    text-align: left;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+#dob {
+    width: 100%;
+
+    padding: 15px;
+
+    font-size: 17px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+#dob:focus {
+    border-color: darkblue;
+}
+
+#calculateBtn {
+    width: 100%;
+
+    padding: 15px;
+
+    background: darkblue;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#calculateBtn:hover {
+    background: red;
+
+    transform: translateY(-2px);
+}
+
+#result {
+    margin-top: 10px;
+
+    padding: 20px;
+
+    min-height: 65px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #eef4ff;
+
+    color: darkblue;
+
+    border-radius: 8px;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    #dob,
+    #calculateBtn {
+        font-size: 16px;
+    }
+
+    #result {
+        font-size: 17px;
+    }
+}

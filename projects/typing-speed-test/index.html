@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Typing Speed Test</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Typing Speed Test</h1>
+
+        <p>
+            Type the given sentence as quickly and
+            accurately as you can.
+        </p>
+
+        <div class="test-box">
+
+            <p id="textToType">
+                The quick brown fox jumps over the lazy dog.
+            </p>
+
+            <textarea
+                id="typingInput"
+                placeholder="Start typing here..."
+                disabled
+            ></textarea>
+
+            <div class="stats">
+
+                <div class="stat-box">
+                    <span id="time">30</span>
+                    <p>Seconds</p>
+                </div>
+
+                <div class="stat-box">
+                    <span id="wpm">0</span>
+                    <p>WPM</p>
+                </div>
+
+                <div class="stat-box">
+                    <span id="accuracy">0%</span>
+                    <p>Accuracy</p>
+                </div>
+
+            </div>
+
+            <button id="startBtn">
+                Start Test
+            </button>
+
+            <button id="resetBtn">
+                Reset
+            </button>
+
+            <p id="result">
+                Click Start Test to begin.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

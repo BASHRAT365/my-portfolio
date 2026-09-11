@@ -1,0 +1,1450 @@
+/* =========================================================
+   LUXORA - PREMIUM PERFUME & COSMETICS WEBSITE
+   PROFESSIONAL CSS
+========================================================= */
+
+
+/* =========================================================
+   1. RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+
+/* =========================================================
+   2. HEADER
+========================================================= */
+
+.header {
+    width: 100%;
+    background: #111;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 75px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar a {
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #d4af37;
+}
+
+.cart {
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.cart span {
+    font-size: 13px;
+    background: #d4af37;
+    color: #111;
+    padding: 3px 7px;
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   3. MOBILE MENU BUTTON
+========================================================= */
+
+.menu-toggle {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    color: #fff;
+    font-size: 30px;
+
+    cursor: pointer;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   4. HERO
+========================================================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("images/perfume-hero.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    color: #fff;
+
+    padding: 80px 0;
+}
+
+.hero-subtitle {
+    color: #d4af37;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    max-width: 700px;
+
+    font-size: 64px;
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #d4af37;
+}
+
+.hero-content > p:not(.hero-subtitle) {
+    max-width: 600px;
+
+    font-size: 17px;
+    color: #eee;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   5. BUTTON
+========================================================= */
+
+.primary-btn {
+    display: inline-block;
+
+    background: #d4af37;
+    color: #111;
+
+    padding: 14px 28px;
+
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #fff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   6. SECTION HEADING
+========================================================= */
+
+.section-heading {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+.section-heading p,
+.section-label {
+    color: #b28b19;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    color: #171717;
+
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   7. CATEGORIES
+========================================================= */
+
+.categories {
+    padding: 100px 20px;
+}
+
+.category-grid {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.category-card {
+    text-align: center;
+
+    padding: 40px 25px;
+
+    background: #faf8f2;
+
+    border: 1px solid #eee;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.category-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.category-card h3 {
+    color: #222;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   8. PRODUCTS
+========================================================= */
+
+.products-section {
+    padding: 100px 20px;
+    background: #f8f8f8;
+}
+
+.product-grid {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.product-card {
+    background: #fff;
+
+    border-radius: 8px;
+    overflow: hidden;
+
+    border: 1px solid #eee;
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+.product-image {
+    height: 320px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #f4f4f4;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-badge {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    background: #d4af37;
+    color: #111;
+
+    padding: 5px 10px;
+
+    border-radius: 3px;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-category {
+    color: #b28b19;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 7px;
+}
+
+.product-info h3 {
+    font-size: 21px;
+    color: #222;
+
+    margin-bottom: 10px;
+}
+
+.product-description {
+    color: #777;
+
+    font-size: 13px;
+
+    margin-bottom: 20px;
+}
+
+.product-bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.product-bottom strong {
+    color: #111;
+    font-size: 21px;
+}
+
+.add-cart {
+    background: #111;
+    color: #fff;
+
+    border: none;
+
+    padding: 9px 13px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+.add-cart:hover {
+    background: #d4af37;
+    color: #111;
+}
+
+
+/* =========================================================
+   9. ABOUT
+========================================================= */
+
+.about-section {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 110px 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-image {
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+.about-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-content h2 {
+    color: #222;
+
+    font-size: 43px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.about-content p:not(.section-label) {
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.about-content .primary-btn {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   10. SERVICES
+========================================================= */
+
+.services-section {
+    padding: 100px 20px;
+    background: #faf8f2;
+}
+
+.services-grid {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.service-card {
+    text-align: center;
+
+    background: #fff;
+
+    padding: 35px 20px;
+
+    border-radius: 7px;
+
+    border: 1px solid #eee;
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.07);
+}
+
+.service-card > div {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #222;
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   11. CONTACT
+========================================================= */
+
+.contact-section {
+    padding: 110px 20px;
+}
+
+.contact-form {
+    width: 90%;
+    max-width: 800px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #fafafa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #d4af37;
+    background: #fff;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .primary-btn {
+    align-self: flex-start;
+}
+
+
+/* =========================================================
+   12. FOOTER
+========================================================= */
+
+.footer {
+    background: #111;
+    color: #fff;
+
+    padding-top: 60px;
+}
+
+.footer-content {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding-bottom: 45px;
+}
+
+.footer-content p {
+    color: #aaa;
+
+    font-size: 14px;
+
+    margin-top: 12px;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 25px;
+
+    align-items: center;
+}
+
+.footer-links a {
+    color: #ddd;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d4af37;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.footer-bottom p {
+    color: #888;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   13. TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section {
+        gap: 40px;
+    }
+}
+
+
+/* =========================================================
+   14. MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* ---------- HEADER ---------- */
+
+    .nav-container {
+        position: relative;
+
+        flex-wrap: wrap;
+
+        padding: 18px 0;
+
+        gap: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+
+        position: absolute;
+
+        right: 50%;
+        top: 20px;
+
+        transform: translateX(50%);
+    }
+
+    .navbar {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 18px;
+
+        padding: 20px 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .cart {
+        position: absolute;
+        right: 5%;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: 350px;
+
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-subtitle {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content > p:not(.hero-subtitle) {
+        font-size: 15px;
+    }
+
+
+    /* ---------- MOBILE SECTION WIDTH ---------- */
+
+    .categories,
+    .products-section,
+    .services-section,
+    .contact-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .category-grid,
+    .product-grid,
+    .services-grid,
+    .contact-form {
+        width: 100%;
+    }
+
+
+    /* ---------- SECTION HEADINGS ---------- */
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+
+    /* ---------- CATEGORIES ---------- */
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- PRODUCTS ---------- */
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 350px;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about-section {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        padding: 80px 10px;
+
+        gap: 40px;
+    }
+
+    .about-image {
+        height: 400px;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+
+    /* ---------- SERVICES ---------- */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer-content {
+        flex-direction: column;
+
+        text-align: center;
+
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+}
+
+
+/* =========================================================
+   15. SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .logo {
+        font-size: 21px;
+        letter-spacing: 3px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+
+    .product-bottom {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .add-cart {
+        width: 100%;
+    }
+}
+/* =========================================================
+   16. BLOG PAGE
+========================================================= */
+
+.blog-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.58),
+            rgba(0, 0, 0, 0.58)
+        ),
+        url("images/perfume-hero.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    color: #fff;
+}
+
+.blog-hero-content {
+    width: 90%;
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 70px 0;
+}
+
+.blog-hero h1 {
+    font-size: 58px;
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+.blog-hero h1 span {
+    color: #d4af37;
+}
+
+.blog-hero-content > p:not(.hero-subtitle) {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #eee;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   BLOG SECTION
+========================================================= */
+
+.blog-section {
+    padding: 100px 20px;
+}
+
+.blog-grid {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   BLOG CARD
+========================================================= */
+
+.blog-card {
+    background: #fff;
+
+    border: 1px solid #eee;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   BLOG IMAGE
+========================================================= */
+
+.blog-image {
+    height: 240px;
+
+    overflow: hidden;
+
+    background: #f4f4f4;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   BLOG CONTENT
+========================================================= */
+
+.blog-content {
+    padding: 25px;
+}
+
+.blog-category {
+    color: #b28b19;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.blog-content h3 {
+    color: #222;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    margin-bottom: 12px;
+}
+
+.blog-content > p:not(.blog-category) {
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   BLOG BUTTON
+========================================================= */
+
+.blog-btn {
+    color: #111;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.blog-btn:hover {
+    color: #b28b19;
+}
+
+
+/* =========================================================
+   BLOG TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .blog-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .blog-hero h1 {
+        font-size: 50px;
+    }
+}
+
+
+/* =========================================================
+   BLOG MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .blog-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .blog-grid {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .blog-hero {
+        min-height: 350px;
+    }
+
+    .blog-hero-content {
+        padding: 50px 10px;
+    }
+
+    .blog-hero h1 {
+        font-size: 40px;
+    }
+
+    .blog-hero-content > p:not(.hero-subtitle) {
+        font-size: 14px;
+    }
+
+    .blog-image {
+        height: 280px;
+    }
+}
+
+
+/* =========================================================
+   BLOG SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .blog-hero h1 {
+        font-size: 34px;
+    }
+
+    .blog-image {
+        height: 240px;
+    }
+
+    .blog-content {
+        padding: 20px;
+    }
+
+    .blog-content h3 {
+        font-size: 20px;
+    }
+}
+/* =========================================================
+   16. BLOG POST PAGE
+========================================================= */
+
+.blog-post {
+    width: 90%;
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 90px 0 110px;
+}
+
+
+/* =========================================================
+   BLOG POST HEADER
+========================================================= */
+
+.blog-post-header {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.blog-post-header .blog-category {
+    color: #b28b19;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.blog-post-header h1 {
+    color: #222;
+
+    font-size: 48px;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+}
+
+.blog-post-date {
+    color: #888;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   BLOG POST IMAGE
+========================================================= */
+
+.blog-post-image {
+    width: 100%;
+
+    height: 480px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    margin-bottom: 45px;
+
+    background: #f4f4f4;
+}
+
+.blog-post-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   BLOG POST CONTENT
+========================================================= */
+
+.blog-post-content {
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+.blog-post-content h2 {
+    color: #222;
+
+    font-size: 28px;
+
+    line-height: 1.3;
+
+    margin-top: 40px;
+
+    margin-bottom: 15px;
+}
+
+.blog-post-content p {
+    margin-bottom: 20px;
+}
+
+.blog-post-intro {
+    color: #444;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   BACK TO BLOG BUTTON
+========================================================= */
+
+.blog-back-btn {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    background: #111;
+
+    color: #fff;
+
+    padding: 12px 22px;
+
+    border-radius: 4px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.blog-back-btn:hover {
+    background: #d4af37;
+
+    color: #111;
+}
+
+
+/* =========================================================
+   BLOG POST TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .blog-post-header h1 {
+        font-size: 42px;
+    }
+
+    .blog-post-image {
+        height: 420px;
+    }
+}
+
+
+/* =========================================================
+   BLOG POST MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .blog-post {
+        width: 100%;
+
+        padding: 70px 10px 80px;
+    }
+
+    .blog-post-header {
+        margin-bottom: 30px;
+    }
+
+    .blog-post-header h1 {
+        font-size: 34px;
+    }
+
+    .blog-post-image {
+        height: 350px;
+
+        margin-bottom: 35px;
+    }
+
+    .blog-post-content {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+    .blog-post-content h2 {
+        font-size: 24px;
+
+        margin-top: 35px;
+    }
+
+    .blog-post-intro {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================================
+   BLOG POST SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .blog-post-header h1 {
+        font-size: 30px;
+    }
+
+    .blog-post-image {
+        height: 280px;
+    }
+
+    .blog-post-content h2 {
+        font-size: 22px;
+    }
+
+    .blog-back-btn {
+        width: 100%;
+
+        text-align: center;
+    }
+}

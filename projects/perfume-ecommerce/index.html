@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="LUXORA — Premium Perfume & Cosmetics Store">
+
+    <title>LUXORA | Premium Perfume & Cosmetics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                LUXORA
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+             ☰
+            </button>
+
+    <nav class="navbar" id="navbar">
+
+         <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+            <div class="cart">
+
+                🛒 <span id="cartCount">0</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    ELEGANCE • BEAUTY • CONFIDENCE
+                </p>
+
+                <h1>
+                    Discover Your
+                    <span>Signature Scent</span>
+                </h1>
+
+                <p>
+                    Explore our premium collection of perfumes
+                    and beauty essentials designed for
+                    unforgettable moments.
+                </p>
+
+                <a href="#products" class="primary-btn">
+                    Shop Collection
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories">
+
+            <div class="section-heading">
+
+                <p>EXPLORE OUR COLLECTION</p>
+
+                <h2>
+                    Shop By Category
+                </h2>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        🌹
+                    </div>
+
+                    <h3>Women's Perfume</h3>
+
+                    <p>
+                        Elegant fragrances for every occasion.
+                    </p>
+
+                </div>
+
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        🕴️
+                    </div>
+
+                    <h3>Men's Perfume</h3>
+
+                    <p>
+                        Bold and sophisticated signature scents.
+                    </p>
+
+                </div>
+
+
+                <div class="category-card">
+
+                    <div class="category-icon">
+                        ✨
+                    </div>
+
+                    <h3>Beauty Collection</h3>
+
+                    <p>
+                        Premium beauty and skincare essentials.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section class="products-section"
+                 id="products">
+
+            <div class="section-heading">
+
+                <p>OUR BESTSELLERS</p>
+
+                <h2>
+                    Featured Products
+                </h2>
+
+            </div>
+
+
+            <div class="product-grid">
+
+
+                <!-- Product 1 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/perfume-1.jpg"
+                            alt="Luxury Rose Perfume"
+                        >
+
+                        <span class="product-badge">
+                            Bestseller
+                        </span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Women's Perfume
+                        </p>
+
+                        <h3>
+                            Rose Elegance
+                        </h3>
+
+                        <p class="product-description">
+                            A delicate floral fragrance
+                            with a luxurious finish.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                $89
+                            </strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="Rose Elegance"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 2 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/perfume-2.jpg"
+                            alt="Men's Signature Perfume"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Men's Perfume
+                        </p>
+
+                        <h3>
+                            Noir Signature
+                        </h3>
+
+                        <p class="product-description">
+                            A powerful blend of woody
+                            and aromatic notes.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                $99
+                            </strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="Noir Signature"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 3 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/perfume-3.jpg"
+                            alt="Luxury Oud Perfume"
+                        >
+
+                        <span class="product-badge">
+                            New
+                        </span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Premium Collection
+                        </p>
+
+                        <h3>
+                            Royal Oud
+                        </h3>
+
+                        <p class="product-description">
+                            Rich oud blended with warm
+                            oriental notes.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                $129
+                            </strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="Royal Oud"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Product 4 -->
+
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/perfume-4.jpg"
+                            alt="Beauty Skincare Collection"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Beauty
+                        </p>
+
+                        <h3>
+                            Glow Essentials
+                        </h3>
+
+                        <p class="product-description">
+                            Everyday beauty essentials
+                            for healthy-looking skin.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                $75
+                            </strong>
+
+                            <button
+                                class="add-cart"
+                                data-product="Glow Essentials"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section"
+                 id="about">
+
+            <div class="about-image">
+
+                <img
+                    src="images/about-perfume.jpg"
+                    alt="Luxury perfume collection"
+                >
+
+            </div>
+
+            <div class="about-content">
+
+                <p class="section-label">
+                    ABOUT LUXORA
+                </p>
+
+                <h2>
+                    Beauty That Leaves
+                    a Lasting Impression
+                </h2>
+
+                <p>
+                    At LUXORA, we believe fragrance is more
+                    than a scent. It is a reflection of
+                    personality, confidence and style.
+                </p>
+
+                <p>
+                    Our carefully selected collection brings
+                    together elegant perfumes and premium
+                    beauty products for modern lifestyles.
+                </p>
+
+                <a href="#products"
+                   class="primary-btn">
+                    Explore Products
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section class="services-section"
+                 id="services">
+
+            <div class="section-heading">
+
+                <p>WHY CHOOSE US</p>
+
+                <h2>
+                    Premium Shopping Experience
+                </h2>
+
+            </div>
+
+
+            <div class="services-grid">
+
+                <div class="service-card">
+
+                    <div>
+                        🚚
+                    </div>
+
+                    <h3>
+                        Fast Delivery
+                    </h3>
+
+                    <p>
+                        Quick and reliable delivery
+                        straight to your door.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div>
+                        💎
+                    </div>
+
+                    <h3>
+                        Premium Quality
+                    </h3>
+
+                    <p>
+                        Carefully selected products
+                        from trusted collections.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div>
+                        🔒
+                    </div>
+
+                    <h3>
+                        Secure Shopping
+                    </h3>
+
+                    <p>
+                        A safe and simple shopping
+                        experience for every customer.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div>
+                        💬
+                    </div>
+
+                    <h3>
+                        Customer Support
+                    </h3>
+
+                    <p>
+                        Friendly assistance whenever
+                        you need help.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact-section"
+                 id="contact">
+
+            <div class="section-heading">
+
+                <p>GET IN TOUCH</p>
+
+                <h2>
+                    Contact LUXORA
+                </h2>
+
+            </div>
+
+
+            <form class="contact-form"
+                  id="contactForm">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                </div>
+
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                >
+
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="#" class="logo">
+                    LUXORA
+                </a>
+
+                <p>
+                    Premium fragrance and beauty
+                    for modern lifestyles.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#products">Products</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 LUXORA.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

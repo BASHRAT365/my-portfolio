@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Sweet & Baker — Order confirmation."
+    >
+
+    <title>
+        Order Confirmed | Sweet & Baker
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="nav-container">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                Sweet & Baker
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         CONFIRMATION PAGE
+    ====================================================== -->
+
+    <main class="confirmation-page">
+
+        <div class="confirmation-card">
+
+
+            <!-- SUCCESS ICON -->
+
+            <div class="confirmation-icon">
+                ✓
+            </div>
+
+
+            <!-- LABEL -->
+
+            <p class="confirmation-label">
+                ORDER RECEIVED
+            </p>
+
+
+            <!-- ORDER NUMBER -->
+
+            <p class="order-number">
+
+                Order #
+
+                <span id="confirmationOrderNumber">
+                    SB-000000
+                </span>
+
+            </p>
+            <!-- ORDER STATUS -->
+
+<div class="order-status">
+
+    <span class="status-dot"></span>
+
+    <span id="orderStatusText">
+        Order Received
+    </span>
+
+</div>
+
+
+            <!-- TITLE -->
+
+            <h1>
+                Thank You!
+            </h1>
+
+
+            <!-- MESSAGE -->
+
+            <p class="confirmation-message">
+
+                Your order has been successfully received.
+                We will contact you shortly to confirm the
+                details of your order.
+
+            </p>
+
+
+            <!-- CUSTOMER DETAILS -->
+
+            <div class="confirmation-details">
+
+
+                <!-- CUSTOMER -->
+
+                <div>
+
+                    <span>
+                        Customer
+                    </span>
+
+                    <strong id="confirmationName">
+                        Customer
+                    </strong>
+
+                </div>
+
+
+                <!-- TOTAL -->
+
+                <div>
+
+                    <span>
+                        Order Total
+                    </span>
+
+                    <strong id="confirmationTotal">
+                        $0.00
+                    </strong>
+
+                </div>
+
+
+                <!-- DATE -->
+
+                <div>
+
+                    <span>
+                        Preferred Date
+                    </span>
+
+                    <strong id="confirmationDate">
+                        —
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 ORDER SUMMARY
+            ================================================== -->
+
+            <div class="confirmation-order">
+
+                <h2>
+                    Order Summary
+                </h2>
+
+
+                <div
+                    class="confirmation-order-items"
+                    id="confirmationOrderItems"
+                >
+
+                    <!-- Products will appear here -->
+
+                </div>
+
+            </div>
+            <!-- =====================================================
+     CUSTOMER DETAILS
+====================================================== -->
+
+<div class="confirmation-customer">
+
+    <h2>
+        Customer Details
+    </h2>
+
+    <div class="customer-detail-grid">
+
+        <div>
+            <span>Phone</span>
+            <strong id="confirmationPhone">—</strong>
+        </div>
+
+        <div>
+            <span>Email</span>
+            <strong id="confirmationEmail">—</strong>
+        </div>
+
+        <div>
+            <span>Address</span>
+            <strong id="confirmationAddress">—</strong>
+        </div>
+
+        <div>
+            <span>Suburb</span>
+            <strong id="confirmationSuburb">—</strong>
+        </div>
+
+        <div>
+            <span>State</span>
+            <strong id="confirmationState">—</strong>
+        </div>
+
+        <div>
+            <span>Postcode</span>
+            <strong id="confirmationPostcode">—</strong>
+        </div>
+
+    </div>
+
+    <div class="customer-notes">
+
+        <span>Order Notes</span>
+
+        <p id="confirmationNotes">
+            —
+        </p>
+
+    </div>
+
+</div>
+<!-- =====================================================
+     ORDER PROGRESS
+====================================================== -->
+
+<div class="order-progress">
+
+    <h2>
+        Order Progress
+    </h2>
+
+    <div class="progress-steps">
+
+        <div class="progress-step active">
+
+            <div class="progress-circle">
+                ✓
+            </div>
+
+            <span>
+                Order Received
+            </span>
+
+        </div>
+
+
+        <div class="progress-line"></div>
+
+
+        <div class="progress-step">
+
+            <div class="progress-circle">
+                2
+            </div>
+
+            <span>
+                Confirmed
+            </span>
+
+        </div>
+
+
+        <div class="progress-line"></div>
+
+
+        <div class="progress-step">
+
+            <div class="progress-circle">
+                3
+            </div>
+
+            <span>
+                Preparing
+            </span>
+
+        </div>
+
+
+        <div class="progress-line"></div>
+
+
+        <div class="progress-step">
+
+            <div class="progress-circle">
+                4
+            </div>
+
+            <span>
+                Ready
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+            <!-- BACK TO SHOP -->
+
+            <a
+                href="index.html"
+                class="primary-btn"
+            >
+                Back to Shop
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Sweet & Baker. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- CONFIRMATION JAVASCRIPT -->
+
+    <script src="confirmation.js"></script>
+
+</body>
+
+</html>

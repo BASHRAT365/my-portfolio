@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Word Counter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Word Counter</h1>
+
+        <p>
+            Type your text and count words and characters
+            in real time.
+        </p>
+
+        <div class="counter">
+
+            <label for="textInput">
+                Enter Your Text
+            </label>
+
+            <textarea
+                id="textInput"
+                placeholder="Start typing here..."
+            ></textarea>
+
+            <div class="counter-info">
+
+                <div class="count-box">
+
+                    <span id="wordCount">0</span>
+
+                    <p>Words</p>
+
+                </div>
+
+                <div class="count-box">
+
+                    <span id="characterCount">0</span>
+
+                    <p>Characters</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

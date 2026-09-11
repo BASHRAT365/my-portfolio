@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Modern Property Portal - Find your perfect home for rent or sale.">
+
+    <title>Modern Property Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                Modern<span>Property</span>
+            </a>
+
+            <nav class="navbar" id="navbar">
+
+                <a href="#home">Home</a>
+
+                <a href="#properties">Properties</a>
+
+                <a href="#about">About</a>
+
+                <a href="#services">Services</a>
+
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open Menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-small-title">
+                FIND YOUR PERFECT HOME
+            </p>
+
+            <h1>
+                Find a Place
+                <br>
+                You'll Love to Live
+            </h1>
+
+            <p class="hero-text">
+                Discover beautiful properties in the best
+                locations and find a home that fits your lifestyle.
+            </p>
+
+            <!-- SEARCH BOX -->
+
+            <div class="search-box">
+
+                <div class="search-field">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <select id="location">
+
+                        <option value="all">
+                            All Locations
+                        </option>
+
+                        <option value="sydney">
+                            Sydney
+                        </option>
+
+                        <option value="melbourne">
+                            Melbourne
+                        </option>
+
+                        <option value="brisbane">
+                            Brisbane
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="search-field">
+
+                    <label for="propertyType">
+                        Property Type
+                    </label>
+
+                    <select id="propertyType">
+
+                        <option value="all">
+                            All Types
+                        </option>
+
+                        <option value="house">
+                            House
+                        </option>
+
+                        <option value="apartment">
+                            Apartment
+                        </option>
+
+                        <option value="villa">
+                            Villa
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="search-field">
+
+                    <label for="bedrooms">
+                        Bedrooms
+                    </label>
+
+                    <select id="bedrooms">
+
+                        <option value="all">
+                            Any
+                        </option>
+
+                        <option value="2">
+                            2+
+                        </option>
+
+                        <option value="3">
+                            3+
+                        </option>
+
+                        <option value="4">
+                            4+
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="search-btn"
+                    id="searchBtn"
+                >
+                    Search
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROPERTIES ================= -->
+
+    <section
+        class="properties-section"
+        id="properties"
+    >
+
+        <div class="section-heading">
+
+            <p>EXPLORE PROPERTIES</p>
+
+            <h2>
+                Featured Properties
+            </h2>
+
+            <span>
+                Discover some of our most popular properties.
+            </span>
+
+        </div>
+
+
+        <div
+            class="property-grid"
+            id="propertyGrid"
+        >
+
+            <!-- PROPERTY 1 -->
+
+            <div
+                class="property-card"
+                data-location="sydney"
+                data-type="house"
+                data-bedrooms="4"
+            >
+
+                <div class="property-image">
+
+                    <img
+                        src="images/property-1.jpg"
+                        alt="Modern house in Sydney"
+                    >
+
+                    <span class="property-status">
+                        For Rent
+                    </span>
+
+                </div>
+
+                <div class="property-content">
+
+                    <p class="property-type">
+                        HOUSE
+                    </p>
+
+                    <h3>
+                        Modern Family House
+                    </h3>
+
+                    <p class="property-location">
+                        📍 Sydney, NSW
+                    </p>
+
+                    <div class="property-info">
+
+                        <span>
+                            🛏 4 Beds
+                        </span>
+
+                        <span>
+                            🛁 2 Baths
+                        </span>
+
+                        <span>
+                            📐 250 m²
+                        </span>
+
+                    </div>
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            $850 / week
+                        </strong>
+
+                        <button class="details-btn" data-property="1">
+                         View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 2 -->
+
+            <div
+                class="property-card"
+                data-location="melbourne"
+                data-type="apartment"
+                data-bedrooms="3"
+            >
+
+                <div class="property-image">
+
+                    <img
+                        src="images/property-2.jpg"
+                        alt="Luxury apartment in Melbourne"
+                    >
+
+                    <span class="property-status">
+                        For Rent
+                    </span>
+
+                </div>
+
+                <div class="property-content">
+
+                    <p class="property-type">
+                        APARTMENT
+                    </p>
+
+                    <h3>
+                        Luxury City Apartment
+                    </h3>
+
+                    <p class="property-location">
+                        📍 Melbourne, VIC
+                    </p>
+
+                    <div class="property-info">
+
+                        <span>
+                            🛏 3 Beds
+                        </span>
+
+                        <span>
+                            🛁 2 Baths
+                        </span>
+
+                        <span>
+                            📐 180 m²
+                        </span>
+
+                    </div>
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            $720 / week
+                        </strong>
+
+                        <button class="details-btn" data-property="2">
+                          View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 3 -->
+
+            <div
+                class="property-card"
+                data-location="brisbane"
+                data-type="villa"
+                data-bedrooms="4"
+            >
+
+                <div class="property-image">
+
+                    <img
+                        src="images/property-3.jpg"
+                        alt="Beautiful villa in Brisbane"
+                    >
+
+                    <span class="property-status">
+                        For Sale
+                    </span>
+
+                </div>
+
+                <div class="property-content">
+
+                    <p class="property-type">
+                        VILLA
+                    </p>
+
+                    <h3>
+                        Elegant Garden Villa
+                    </h3>
+
+                    <p class="property-location">
+                        📍 Brisbane, QLD
+                    </p>
+
+                    <div class="property-info">
+
+                        <span>
+                            🛏 4 Beds
+                        </span>
+
+                        <span>
+                            🛁 3 Baths
+                        </span>
+
+                        <span>
+                            📐 320 m²
+                        </span>
+
+                    </div>
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            $980,000
+                        </strong>
+
+                        <button class="details-btn" data-property="3">
+                         View Details
+                         </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROPERTY 4 -->
+
+            <div
+                class="property-card"
+                data-location="sydney"
+                data-type="apartment"
+                data-bedrooms="2"
+            >
+
+                <div class="property-image">
+
+                    <img
+                        src="images/property-4.jpg"
+                        alt="Contemporary apartment in Sydney"
+                    >
+
+                    <span class="property-status">
+                        For Rent
+                    </span>
+
+                </div>
+
+                <div class="property-content">
+
+                    <p class="property-type">
+                        APARTMENT
+                    </p>
+
+                    <h3>
+                        Contemporary Harbour Apartment
+                    </h3>
+
+                    <p class="property-location">
+                        📍 Sydney, NSW
+                    </p>
+
+                    <div class="property-info">
+
+                        <span>
+                            🛏 2 Beds
+                        </span>
+
+                        <span>
+                            🛁 2 Baths
+                        </span>
+
+                        <span>
+                            📐 140 m²
+                        </span>
+
+                    </div>
+
+                    <div class="property-bottom">
+
+                        <strong>
+                            $680 / week
+                        </strong>
+
+                        <button class="details-btn" data-property="4">
+                         View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <p
+            class="no-results"
+            id="noResults"
+        >
+            No properties found. Try different search options.
+        </p>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section
+        class="about-section"
+        id="about"
+    >
+
+        <div class="about-content">
+
+            <p class="section-label">
+                ABOUT US
+            </p>
+
+            <h2>
+                Helping You Find
+                <br>
+                Your Dream Property
+            </h2>
+
+            <p>
+                Modern Property Portal makes finding your
+                next home simple, convenient and stress-free.
+                We connect people with quality properties
+                in desirable locations.
+            </p>
+
+            <p>
+                Whether you are looking for a family home,
+                modern apartment or luxury villa, our
+                property collection gives you plenty of
+                options to explore.
+            </p>
+
+            <button class="primary-btn">
+                Learn More
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section
+        class="services-section"
+        id="services"
+    >
+
+        <div class="section-heading">
+
+            <p>OUR SERVICES</p>
+
+            <h2>
+                Everything You Need
+            </h2>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🏠
+                </div>
+
+                <h3>
+                    Property Search
+                </h3>
+
+                <p>
+                    Find properties based on location,
+                    price, type and number of bedrooms.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Agent Support
+                </h3>
+
+                <p>
+                    Connect with experienced property
+                    agents for professional assistance.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📅
+                </div>
+
+                <h3>
+                    Property Visits
+                </h3>
+
+                <p>
+                    Schedule a convenient property visit
+                    with our booking service.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section
+        class="contact-section"
+        id="contact"
+    >
+
+        <div class="section-heading">
+
+            <p>GET IN TOUCH</p>
+
+            <h2>
+                Book a Property Visit
+            </h2>
+
+            <span>
+                Interested in a property?
+                Send us your details and our agent will contact you.
+            </span>
+
+        </div>
+
+
+        <form
+            class="contact-form"
+            id="contactForm"
+        >
+
+            <div class="form-row">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+            </div>
+
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required
+            >
+
+
+            <select id="propertyInterest" required>
+
+                <option value="">
+                    Select Property
+                </option>
+
+                <option value="Modern Family House">
+                    Modern Family House
+                </option>
+
+                <option value="Luxury City Apartment">
+                    Luxury City Apartment
+                </option>
+
+                <option value="Elegant Garden Villa">
+                    Elegant Garden Villa
+                </option>
+
+                <option value="Contemporary Harbour Apartment">
+                    Contemporary Harbour Apartment
+                </option>
+
+            </select>
+
+
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Your Message"
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="primary-btn"
+            >
+                Request a Visit
+            </button>
+
+            <p
+                class="form-message"
+                id="formMessage"
+            ></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="#" class="logo">
+                    Modern<span>Property</span>
+                </a>
+
+                <p>
+                    Find a place you'll love to live.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#properties">
+                    Properties
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Modern Property Portal.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

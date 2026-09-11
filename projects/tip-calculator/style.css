@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #fff4e6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin: 0 0 15px;
+
+    color: #d35400;
+
+    font-size: 32px;
+}
+
+.container > p {
+    margin-bottom: 30px;
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    text-align: left;
+}
+
+.calculator label {
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+.calculator input {
+    width: 100%;
+
+    padding: 14px;
+
+    font-size: 17px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.calculator input:focus {
+    border-color: #d35400;
+}
+
+#calculateBtn {
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 15px;
+
+    background: #d35400;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#calculateBtn:hover {
+    background: #e67e22;
+
+    transform: translateY(-2px);
+}
+
+#result {
+    margin-top: 15px;
+
+    padding: 20px;
+
+    background: #fff4e6;
+
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+#result p {
+    margin: 10px 0;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+#result span {
+    font-weight: bold;
+
+    color: #d35400;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .container > p {
+        font-size: 15px;
+    }
+
+    .calculator input,
+    #calculateBtn {
+        font-size: 16px;
+    }
+
+    #result p {
+        font-size: 15px;
+    }
+}

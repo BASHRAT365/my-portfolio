@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Currency Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Currency Converter</h1>
+
+        <p>Convert currencies quickly and easily.</p>
+
+        <div class="converter">
+
+            <label for="amount">Amount</label>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Enter amount"
+                step="0.01"
+            >
+
+            <label for="fromCurrency">From Currency</label>
+
+            <select id="fromCurrency">
+                <option value="USD">USD - US Dollar</option>
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="PKR">PKR - Pakistani Rupee</option>
+            </select>
+
+            <label for="toCurrency">To Currency</label>
+
+            <select id="toCurrency">
+                <option value="AUD">AUD - Australian Dollar</option>
+                <option value="USD">USD - US Dollar</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - British Pound</option>
+                <option value="PKR">PKR - Pakistani Rupee</option>
+            </select>
+
+            <button id="convertBtn">
+                Convert Currency
+            </button>
+
+            <div id="result">
+
+                <p>
+                    Converted Amount:
+                    <span id="convertedAmount">--</span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

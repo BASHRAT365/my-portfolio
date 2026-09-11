@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #eef4ff;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin: 0 0 15px;
+
+    color: darkblue;
+
+    font-size: 32px;
+}
+
+.container p {
+    margin-bottom: 25px;
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+#password {
+    width: 100%;
+
+    padding: 15px;
+
+    font-size: 18px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+#password:focus {
+    border-color: darkblue;
+}
+
+#strength {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #eef4ff;
+
+    color: darkblue;
+
+    border-radius: 8px;
+
+    font-size: 19px;
+
+    font-weight: bold;
+}
+
+.requirements {
+    margin-top: 25px;
+
+    padding: 0;
+
+    list-style: none;
+
+    text-align: left;
+}
+
+.requirements li {
+    margin-bottom: 12px;
+
+    padding: 10px;
+
+    background: #f5f5f5;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    color: #666;
+}
+
+/* Requirement completed */
+
+.requirements li.valid {
+    color: green;
+
+    background: #e8f7e8;
+
+    font-weight: bold;
+}
+
+/* Requirement not completed */
+
+.requirements li.invalid {
+    color: red;
+
+    background: #fff0f0;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    #password {
+        font-size: 16px;
+    }
+
+    #strength {
+        font-size: 17px;
+    }
+
+    .requirements li {
+        font-size: 14px;
+    }
+}

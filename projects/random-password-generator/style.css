@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #f3f0ff;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin: 0 0 15px;
+
+    color: #5f3dc4;
+
+    font-size: 30px;
+}
+
+.container > p {
+    margin-bottom: 30px;
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+.generator {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    text-align: left;
+}
+
+.generator > label {
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+#passwordLength {
+    width: 100%;
+
+    padding: 14px;
+
+    font-size: 17px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+#passwordLength:focus {
+    border-color: #5f3dc4;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 15px;
+
+    background: #f3f0ff;
+
+    border-radius: 10px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.options input {
+    width: 17px;
+    height: 17px;
+
+    cursor: pointer;
+}
+
+#generateBtn {
+    width: 100%;
+
+    padding: 15px;
+
+    background: #5f3dc4;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#generateBtn:hover {
+    background: #7950f2;
+
+    transform: translateY(-2px);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 5px;
+}
+
+#password {
+    width: 100%;
+
+    padding: 14px;
+
+    font-size: 17px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background: #fafafa;
+}
+
+#copyBtn {
+    width: 100%;
+
+    padding: 13px;
+
+    background: #333;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#copyBtn:hover {
+    background: #555;
+
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .container > p {
+        font-size: 15px;
+    }
+
+    #passwordLength,
+    #password {
+        font-size: 16px;
+    }
+
+    #generateBtn {
+        font-size: 16px;
+    }
+}

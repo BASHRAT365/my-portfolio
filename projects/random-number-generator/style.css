@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #eef2ff;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 550px;
+
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    margin: 0 0 15px;
+
+    color: #3949ab;
+
+    font-size: 30px;
+}
+
+.container > p {
+    margin-bottom: 30px;
+
+    color: #555;
+
+    line-height: 1.6;
+}
+
+.generator {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    text-align: left;
+}
+
+.generator label {
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+.generator input {
+    width: 100%;
+
+    padding: 14px;
+
+    font-size: 17px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.generator input:focus {
+    border-color: #3949ab;
+}
+
+#generateBtn {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 5px;
+
+    background: #3949ab;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#generateBtn:hover {
+    background: #5c6bc0;
+
+    transform: translateY(-2px);
+}
+
+.result {
+    margin-top: 15px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: #eef2ff;
+
+    border-radius: 12px;
+}
+
+.result h2 {
+    margin: 0 0 15px;
+
+    color: #3949ab;
+
+    font-size: 20px;
+}
+
+#resultNumber {
+    display: block;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    color: #222;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .container > p {
+        font-size: 15px;
+    }
+
+    .generator input {
+        font-size: 16px;
+    }
+
+    #generateBtn {
+        font-size: 16px;
+    }
+
+    #resultNumber {
+        font-size: 36px;
+    }
+}
